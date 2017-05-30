@@ -1,0 +1,388 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-blend-mode: screen;
+  background-color: #6b6b6b;
+  background-image: url('./assets/bg.jpg');
+  background-repeat: repeat-y;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+  align-items: center;
+  color: #efefef;
+  background-color: #181c17;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 70vh;
+  width: 100%;
+}
+
+
+nav {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.navwrap {
+  display: flex;
+  margin: 5px;
+}
+
+.icon {
+  height: 23px;
+  margin-top: 10px;
+}
+
+.navwrap a {
+  color: #fff;
+  font-size: 1.5em;
+  margin-left: 10px;
+  margin-top: 15px;
+  text-decoration: none;
+  width: 80%;
+}
+
+#revolver {
+  height: 40px;
+  margin-top: 2px;
+}
+
+.lay-rose {
+  height: 30px;
+  margin: 25px;
+  width: 60px;
+}
+
+.title {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: .7em;
+  margin-top: 45px;
+}
+
+h1 {
+  font-family: 'Forum', cursive;
+  font-size: 4em;
+  margin: 5px 0;
+}
+
+.first {
+  margin-right: 140px;
+}
+
+h2 {
+  color: #1c1d21;
+  font-size: 2em;
+}
+
+.full-card {
+  background-color: #efefef;
+  box-shadow: 0 0 6px .1px #888;
+  height: 430px;
+  margin: 10px 0;
+  opacity: .7;
+  transition: all 1s;
+  width: 300px;
+}
+
+.full-card:hover {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.wrapper {
+  background-color: #000;
+  height: 35%;
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  opacity: .8;
+  transition: all 1s;
+  width: 100%;
+}
+
+.ka-icon {
+  height: 50px;
+  margin: 15px;
+}
+
+.head-right {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.rating,
+.number {
+  color: #fff;
+  margin: 3px;
+  -webkit-text-stroke: .2px #000;
+}
+
+.rating {
+  font-size: 1em;
+}
+
+.number {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.card-header:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  align-items: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+  margin-left: 10px;
+}
+
+.card-body h3 {
+  margin-bottom: 0;
+}
+
+.occupation {
+  color: #6b6a6a;
+  margin-top: 5px;
+}
+
+blockquote {
+  background-color: #e4e4e4;
+  height: 75px;
+  margin: auto;
+  margin-left: 2px;
+  padding: 20px;
+  width: 275px;
+}
+
+.alias {
+  font-size: .9em;
+  margin-bottom: 5px;
+}
+
+h5 {
+  font-size: .9em;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+#ca,
+#ej {
+  height: 105px;
+}
+
+#rd,
+#aj,
+#ck {
+  height: 90px;
+}
+
+#sd,
+#ar {
+  height: 125px;
+}
+
+#roland {
+  background-image: url('./assets/roland.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#cuthbert {
+  background-image: url('./assets/cuthbert2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#alain {
+  background-image: url('./assets/alain2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#susan {
+  background-image: url('./assets/susan.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#jon {
+  background-image: url('./assets/jon.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#crimson {
+  background-image: url('./assets/ck.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#aileen {
+  background-image: url('./assets/aileen.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#eldred {
+  background-image: url('./assets/eldred.jpg');
+  background-position: top;
+  background-size: cover;
+}
+
+#cuthbert .number,
+#cuthbert .rating,
+#susan .number,
+#susan .rating,
+#crimson .number,
+#crimson .rating {
+  color: #000;
+  -webkit-text-stroke: .2px #fff;
+}
+
+.blank-card {
+  height: 430px;
+  margin: 10px 0;
+  width: 300px;
+}
+
+@media (min-width: 520px) {
+
+  header {
+    align-items: flex-end;
+    flex-direction: row;
+    height: 30vh;
+    justify-content: space-around;
+  }
+
+  nav {
+    height: 80%;
+    justify-content: flex-end;
+    margin: 20px;
+    margin-bottom: 8px;
+  }
+
+  .lay-rose {
+    height: 40px;
+    margin: 20px;
+  }
+
+  .title {
+    margin: 5px;
+  }
+}
+
+@media (min-width: 765px) {
+
+  header {
+    height: 20vh;
+    justify-content: space-between;
+  }
+
+  .title {
+    font-size: .7em;
+    flex-direction: row;
+    margin: 5px 30px 0 0;
+  }
+
+  .first {
+    margin-right: 15px;
+  }
+
+  .lay-rose {
+    margin: 15px;
+  }
+
+  nav {
+    align-items: flex-end;
+    flex-direction: row;
+    margin-bottom: 5px;
+    margin-left: 15px;
+  }
+
+  .icon {
+    height: 20px;
+    margin-bottom: 5px;
+  }
+
+  #revolver {
+    height: 34px;
+    margin-bottom: -5px;
+  }
+
+  .navwrap {
+    margin-left: 15px;
+  }
+
+  .navwrap a {
+    align-items: flex-end;
+    display: flex;
+    font-size: 1.1em;
+    margin-left: 5px;
+    margin-top: 0;
+  }
+
+  h2 {
+    align-self: flex-start;
+    font-size: 3em;
+    margin: 30px 0 10px 25px;
+  }
+
+  .all-cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .full-card {
+    margin: 10px;
+  }
+
+  .blank-card {
+    height: 430px;
+    margin: 10px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 959px) {
+
+body{
+  background-image: url('./assets/bg2.jpg');
+}
+
+.icon {
+  height: 25px;
+}
+
+#revolver {
+  height: 40px;
+}
+
+.navwrap a {
+  font-size: 1.3em;
+  }
+}
